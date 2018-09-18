@@ -1,2 +1,22 @@
 <h1 style="text-align: center">Data Binding in Angular</h1>
-<h2>{{stringInterpolation}}</h2>
+
+
+<h1>Interpolation</h1>
+<img  src = {{imageUrl}} class="image-adjustment"/>
+<!--Now we take one button and the value of button is coming from component class which is disabled now using disabled property-->
+<!--so we declare one value of button which hold one boolean value and give status to true.-->
+<br>
+<button disabled={{currentValue}}>CLICK ME</button>
+
+<h1>PropertyBinding</h1>
+<img [src]="imageUrl" class="image-adjustment"/><br>
+
+<!--Both doing the same thing So what is the difference b/w pb and Interpolation??-->
+
+<!--Now Same thing will do with property binding So in pb the attribute [disable] we have to define in square bracket and in quotes we can mention the variable name. -->
+<button [disabled]="currentValue" (click)="onClick()">CLICK ME</button>
+
+<!--So Now u can check that both the buttons are disabled now but for now if we change the value of the variable
+to false we can see that button in string interpolation is still disabled while in property binding it is enabled now.-->
+
+<!--Note: So where you have to use string expression use interpolation and when you are dealing with non string expression use property binding.-->

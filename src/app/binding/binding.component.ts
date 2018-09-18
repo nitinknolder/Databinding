@@ -8,8 +8,15 @@ import { Component, OnInit } from '@angular/core';
 export class BindingComponent implements OnInit {
 
   constructor() { }
-   stringInterpolation = 'Learning string interpolation';
+   imageUrl: string = 'assets/images/Databinding.png';
+   // currentValue: boolean = true;
+  currentValue: boolean = false;
   ngOnInit() {
+  }
+  onClick() {
+    if (!this.currentValue) {
+      alert('I am enable in property binding');
+    }
   }
 
 }
