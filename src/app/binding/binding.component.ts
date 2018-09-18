@@ -8,8 +8,9 @@ import { Component, OnInit } from '@angular/core';
 export class BindingComponent implements OnInit {
 
   constructor() { }
-   stringInterpolation = 'Learning string interpolation';
+userName: string = '';
   ngOnInit() {
   }
 
 }
+
