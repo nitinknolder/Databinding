@@ -8,8 +8,12 @@ import { Component, OnInit } from '@angular/core';
 export class BindingComponent implements OnInit {
 
   constructor() { }
-   stringInterpolation = 'Learning string interpolation';
+   title = 'Learning string interpolation';
   ngOnInit() {
   }
+changeMyTitle() {
+  this.title = 'Learning Event Binding';
+  alert('Title is Changed to: ' + this.title);
+}
 
 }
